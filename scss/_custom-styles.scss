@@ -1,0 +1,58 @@
+a i:hover{
+  color: black;
+  background-color: $color-iconos;
+}
+
+a {
+    transition: color 0.5s ease-in-out;
+    &:hover {
+        color: $primary;
+    }
+}
+
+.navbar {
+    .nav-link {
+        transition: color 0.3s ease;
+        padding-bottom: 0.2rem;
+
+        &.active, &:hover {
+            border-bottom: 2px solid $primary;
+        }
+    }
+}
+.table {
+    tbody tr {
+        transition: background-color 0.3s ease;
+        
+        &:hover {
+            background-color: rgba($primary, 0.1);
+        }        
+    }
+}
+section#artistas * >.card {
+    box-shadow: 0 4px 400px rgba(255, 255, 255, 0.1); 
+    
+    transition: all 0.3s ease-in-out; 
+
+    &:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+        transform: translateY(-2px); 
+    }
+}
+
+h2, p {
+  animation-duration: 3s;
+  animation-name: deslizar;
+}
+
+@keyframes deslizar {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

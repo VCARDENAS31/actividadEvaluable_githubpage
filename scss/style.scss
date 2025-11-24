@@ -1,0 +1,13 @@
+// style.scss - archivo principal
+
+//Importar fuentes de tipografías
+@import "fonts";
+
+// Importar variables personalizadas
+@import "custom-variables";
+
+// Importar Bootstrap 4 (path a node_modules)
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Importar parciales personalizados
+@import "custom-styles";

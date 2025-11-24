@@ -1,0 +1,65 @@
+//Creación de variables
+$body-bg: linear-gradient(180deg, #17162F 0%, #7D5B81 100%);
+$body-color: #FFFF;
+$border-tabla: #FFFF;
+$primary: #9D47FF; 
+$secondary: #003dc0; 
+$container-bg: #473756;
+$container-border: #71638E;
+$color-iconos:#ffff;
+$font-family-titles: 'Julius Sans One', sans-serif;
+$font-family-body: 'Jeju Hallasan', sans-serif;
+$footer-bg: rgba(0, 0, 0, 0.51);
+$color-fondo-modal: #000000; 
+$color-texto-modal: #ffffff;
+$separador-footer: #FFFF;
+
+// Cambiar fuentes de tipografía
+$headings-font-family: $font-family-titles;
+$font-family-base: $font-family-body;
+
+//Modificacíon de themes
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $container-bg,
+  "success": #28a745,
+  "info": #17a2b8,
+);
+
+//Modificación bootstrap
+body{
+  background: $body-bg;
+}
+
+a i {
+  color: $color-iconos;
+  background: black;
+  padding: 2px;
+  border-radius: 40%;
+}
+
+ul li a, div > a, section > a{ 
+  color: $body-color; 
+  text-decoration: none; 
+}
+section > .card, div > .card{
+    background-color: $container-bg;
+    border-color: $container-border;
+}
+.table {
+    border: 1px solid $border-tabla; 
+}
+footer {
+  background: $footer-bg;
+}
+div > .modal-content {
+    background-color: $color-fondo-modal;
+    color: $color-texto-modal;
+}
+
+div > .modal-title {
+    color: $color-texto-modal;
+}
+hr{
+  background-color: $separador-footer;
+}
