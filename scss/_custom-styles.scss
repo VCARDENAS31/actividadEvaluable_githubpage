@@ -94,3 +94,15 @@ div > .modal-title {
 hr{
   background-color: $separador-footer;
 }
+
+.btn-primary, footer .btn-primary {
+    background-image: linear-gradient(to bottom, #9D47FF 0%, #6F00FF 100%);
+    box-shadow: 0 4px 12px rgba(157, 71, 255, 0.4);
+}
+
+.btn-primary:hover,
+footer .btn-primary:hover {
+    background-image: linear-gradient(to bottom, #6F00FF 0%, #9D47FF 100%);
+    box-shadow: 0 6px 15px rgba(111, 0, 255, 0.6);
+    transform: translateY(-2px);
+}

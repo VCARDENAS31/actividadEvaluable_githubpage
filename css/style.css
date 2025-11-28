@@ -11,48 +11,6 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
-  background: linear-gradient(180deg, #17162F 0%, #7D5B81 100%);
-}
-
-a i {
-  color: white;
-  background: black;
-  padding: 2px;
-  border-radius: 40%;
-}
-
-ul li a, div > a, section > a {
-  color: white;
-  text-decoration: none;
-}
-
-section > .card, div > .card {
-  background-color: #473756;
-  border-color: #71638E;
-}
-
-.table {
-  border: 1px solid white;
-}
-
-footer {
-  background: rgba(0, 0, 0, 0.51);
-}
-
-div > .modal-content {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-div > .modal-title {
-  color: #ffffff;
-}
-
-hr {
-  background-color: white;
-}
-
 /*!
  * Bootstrap v4.6.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -9289,11 +9247,11 @@ a:hover {
   background-color: rgba(157, 71, 255, 0.1);
 }
 
-section#artistas * > .card {
+.card {
   box-shadow: 0 4px 400px rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease-in-out;
 }
-section#artistas * > .card:hover {
+.card:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }
@@ -9312,4 +9270,57 @@ h2, p {
     margin-left: 0%;
     width: 100%;
   }
+}
+body {
+  background: linear-gradient(180deg, #17162F 0%, #7D5B81 100%);
+}
+
+a i {
+  color: white;
+  background: black;
+  padding: 2px;
+  border-radius: 40%;
+}
+
+ul li a, div > a, section > a {
+  color: white;
+  text-decoration: none;
+}
+
+section > .card, div > .card {
+  background-color: #473756;
+  border-color: #71638E;
+}
+
+.table {
+  border: 1px solid white;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.51);
+}
+
+div > .modal-content {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+div > .modal-title {
+  color: #ffffff;
+}
+
+hr {
+  background-color: white;
+}
+
+.btn-primary, footer .btn-primary {
+  background-image: linear-gradient(to bottom, #9D47FF 0%, #6F00FF 100%);
+  box-shadow: 0 4px 12px rgba(157, 71, 255, 0.4);
+}
+
+.btn-primary:hover,
+footer .btn-primary:hover {
+  background-image: linear-gradient(to bottom, #6F00FF 0%, #9D47FF 100%);
+  box-shadow: 0 6px 15px rgba(111, 0, 255, 0.6);
+  transform: translateY(-2px);
 }
