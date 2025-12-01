@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nafarroa Urban Fest</title>
+    <link rel="icon" href="assets/imagenes/icon-192.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
 </head>
@@ -108,8 +109,7 @@
                     <div class="col-12 col-sm-6 col-md-4 mb-3">
                         <a href="#" data-toggle="modal" data-target="#modal-tiesto"
                             class="card rounded-md p-3 text-center d-block text-decoration-none">
-                            <img src="assets/imagenes/tiesto.jpeg" class="img-fluid rounded-md mb-3"
-                                alt="DJ Tiesto">
+                            <img src="assets/imagenes/tiesto.jpeg" class="img-fluid rounded-md mb-3" alt="DJ Tiesto">
                             <h5 class="mb-0">DJ TIESTO</h5>
                         </a>
                     </div>
@@ -131,13 +131,13 @@
                     <div class="row justify-content-center">
                         <div class="col-12 col-sm-6 ">
                             <div class="ratio ratio-16x9 rounded-md overflow-hidden">
-                                <video class="img-fluid" controls
+                                <video class="mw-100" controls
                                     poster="assets/caratulas/caratula_eminem_mockingbird.jpg">
                                     <source src="assets/videos/eminem-mockingbird.mp4" type="video/mp4">
                                     <source src="assets/videos/eminem-mockingbird.webm" type="video/webm">
                                     <source src="assets/videos/eminem-mockingbird.mpg" type="video/mpg">
-                                    <track kind="subtitles" src="assets/subtitulos/eminem-mockingbird.vtt"
-                                        srclang="en" label="Ingles">
+                                    <track kind="subtitles" src="assets/subtitulos/eminem-mockingbird.vtt" srclang="en"
+                                        label="Ingles">
                                     Tu navegador no soporta la etiqueta video.
                                 </video>
                             </div>
@@ -155,16 +155,16 @@
                         <p class="mb-1"><i class="fas fa-phone me-2"></i> +34 626 45 33 43</p>
                         <p class="mb-3"><i class="fas fa-envelope me-2"></i> ayt.pamplona@gmail.com</p>
                         <div class="d-flex gap-4 justify-content-center">
-                            <a class="social-btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="social-btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="social-btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="social-btn" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a class="social-btn" href="https://www.facebook.com/?locale=es_ES"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="social-btn" href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 text">
-                    <div
-                        class="card rounded-md p-4 h-100 align-items-center">
+                    <div class="card rounded-md p-4 h-100 align-items-center">
                         <h5>ADQUIERE TUS ENTRADAS</h5>
                         <a class="btn btn-lg btn-primary mt-3" href="#">COMPRAR ENTRADAS</a>
                     </div>
@@ -173,44 +173,60 @@
 
             <section id="horario" class="mb-5">
                 <h2 class="text-center mb-4">HORARIO</h2>
-                <div class="table-responsive">
-                    <table class="table table-dark table-borderless">
-                        <thead>
-                            <tr>
-                                <th>ARTISTAS</th>
-                                <th>HORA</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>DJ DAVID GUETTA</td>
-                                <td>16:00 - 18:00 PM</td>
-                            </tr>
-                            <tr>
-                                <td>DJ TIESTO</td>
-                                <td>18:00 - 20:00 PM</td>
-                            </tr>
-                            <tr>
-                                <td>EMINEM</td>
-                                <td>20:00 - 22:00 PM</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <section class="mb-5 text-center">
-                <h2 class="mb-4">PATROCINADORES</h2>
-
-                <div class="card d-flex justify-content-center align-items-center p-3">
-                    <div class="d-grid w-100 justify-content-center align-items-center gap-4">
-                        <img src="assets/imagenes/redbull.png" alt="Red Bull">
-                        <img src="assets/imagenes/cocacola.png" alt="Coca Cola">
-                        <img src="assets/imagenes/cajarural.png" alt="Caja Rural">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6">
+                        <div class="table-responsive">
+                            <table class="table table-dark table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th>ARTISTAS</th>
+                                        <th>HORA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>DJ DAVID GUETTA</td>
+                                        <td>16:00 - 18:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DJ TIESTO</td>
+                                        <td>18:00 - 20:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EMINEM</td>
+                                        <td>20:00 - 22:00 PM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </section>
+                <section class="mb-5 text-center">
+                    <h2 class="mb-4 mt-5">PATROCINADORES</h2>
 
+                    <div class="card p-3">
+                        <!-- --- VERSIÓN ESCRITORIO --- -->
+                        <div class="d-none d-md-flex justify-content-center align-items-center gap-5">
+                            <a href="https://www.redbull.com/es-es/"><img class="img-fluid"
+                                    src="assets/imagenes/redbull.png" alt="Red Bull Escritorio"></a>
+                            <a href="www.coca-cola.com"><img class="img-fluid" src="assets/imagenes/cocacola.png"
+                                    alt="Coca Cola Escritorio"></a>
+                            <a href="https://www.cajaruraldenavarra.com/es"><img class="img-fluid"
+                                    src="assets/imagenes/cajarural.png" alt="Caja Rural Escritorio"></a>
+                        </div>
+
+                        <!-- --- VERSIÓN MÓVIL --- -->
+                        <div class="d-flex d-md-none justify-content-center align-items-center gap-4">
+                            <a href="https://www.redbull.com/es-es/"><img src="assets/imagenes/redbull-movil.png"
+                                    alt="Red Bull Móvil"></a>
+                            <a href="www.coca-cola.com"><img src="assets/imagenes/cocacola-movil.png"
+                                    alt="Coca Cola Móvil"></a>
+                            <a href="https://www.cajaruraldenavarra.com/es"><img
+                                    src="assets/imagenes/cajarural-movil.png" alt="Caja Rural Móvil"></a>
+                        </div>
+
+                    </div>
+                </section>
         </div>
     </main>
 
@@ -232,9 +248,12 @@
                         <a href="#informacion" class="btn btn-primary">INFORMACIÓN</a>
                     </div>
                     <div class="text-center justify-content-md-start gap-4 mt-3">
-                        <img class="img-fluid" src="assets/imagenes/redbull-movil.png">
-                        <img class="img-fluid" src="assets/imagenes/cocacola-movil.png">
-                        <img class="img-fluid" src="assets/imagenes/cajarural-movil.png">
+                        <a href="https://www.redbull.com/es-es/"><img class="img-fluid"
+                                src="assets/imagenes/redbull-movil.png" alt="Red Bull"></a>
+                        <a href="https://www.coca-cola.com/es/es"><img class="img-fluid"
+                                src="assets/imagenes/cocacola-movil.png" alt="Coca Cola"></a>
+                        <a href="https://www.cajaruraldenavarra.com/es"><img class="img-fluid"
+                                src="assets/imagenes/cajarural-movil.png" alt="Caja Rural"></a>
                     </div>
                 </div>
 
@@ -245,16 +264,17 @@
                     <div class="d-inline-block rounded overflow-hidden mb-3">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.744111364585!2d-1.645516723224754!3d42.81700407119097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50928929944a1b%3A0xf635035e0766348!2sPlaza%20del%20Castillo!5e0!3m2!1ses!2ses!4v1700816000000!5m2!1ses!2ses"
-                             loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
 
                     <p class="mb-3">31001, Plaza del Castillo, Pamplona</p>
 
                     <div class=" gap-4 justify-content-center justify-content-md-end">
-                        <a class="social-btn" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="social-btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-btn" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social-btn" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a class="social-btn" href="https://www.facebook.com/?locale=es_ES"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="social-btn" href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
                     </div>
 
                 </div>
@@ -280,7 +300,8 @@
                 </div>
 
                 <div class="col-12 col-md-6 text-center text-md-end">
-                    <img src="assets/imagenes/ayt_pamplona.png" alt="Organizador" style="height:45px;">
+                    <a href="https://www.pamplona.es/"><img src="assets/imagenes/ayt_pamplona.png"
+                            alt="Organizador"></a>
                 </div>
 
             </div>

@@ -9256,21 +9256,6 @@ a:hover {
   transform: translateY(-2px);
 }
 
-h2, p {
-  animation-duration: 3s;
-  animation-name: deslizar;
-}
-
-@keyframes deslizar {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 body {
   background: linear-gradient(180deg, #17162F 0%, #7D5B81 100%);
 }
@@ -9323,4 +9308,44 @@ footer .btn-primary:hover {
   background-image: linear-gradient(to bottom, #6F00FF 0%, #9D47FF 100%);
   box-shadow: 0 6px 15px rgba(111, 0, 255, 0.6);
   transform: translateY(-2px);
+}
+
+h2, p {
+  -webkit-animation: 3s aparicion 1;
+}
+
+@-webkit-keyframes aparicion {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+.btn-primary:hover {
+  -webkit-animation: 0.7s click 1;
+}
+
+@-webkit-keyframes click {
+  25%, 75% {
+    -webkit-transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+}
+div > section#artistas > div > div > a.card:hover {
+  -webkit-animation: 1s balancear 1;
+}
+
+@-webkit-keyframes balancear {
+  20% {
+    -webkit-transform: scale(0.7) rotate(-6deg);
+  }
+  30%, 70% {
+    -webkit-transform: scale(1.1) rotate(6deg);
+  }
+  50%, 90% {
+    -webkit-transform: scale(1.1) rotate(-6deg);
+  }
 }
