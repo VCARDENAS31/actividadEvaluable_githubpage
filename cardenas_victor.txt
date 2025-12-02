@@ -1,0 +1,57 @@
+﻿1. ¿Qué Componentes de Bootstrap he utilizado?
+______________________________________________
+Para montar la interfaz, me basé en varios componentes de Bootstrap para ahorrar tiempo y asegurar que fuera responsive. Los más importantes que utilicé fueron:
+* Grid: Usé las clases container, row, y col-* para organizar toda la maquetación.
+* Navbar: Lo usé para la barra de navegación de arriba. Le di un toque personal luego con CSS (como el hover de la línea de abajo).
+* Card: Lo usé para los recuadros de contenido, como las secciones de artistas o productos.
+* Table: Para mostrar datos de forma tabular.
+* Button: Principalmente el btn con la variante btn-primary, qué es la que personalice mucho.
+* Modal: Lo usé para mostrar pop-ups o información adicional sin cambiar de página (modal-content, modal-title).
+* HR: La línea simple para separar secciones en el footer o el contenido.
+
+
+2. ¿Qué Personalice de Bootstrap?
+____________________________________________________________
+$body-bg: Le asigné un gradiente vertical que va de un azul muy oscuro (#17162F) a un malva oscuro (#7D5B81), creando el fondo principal de la página.
+$body-color: Color del texto base en la web para asegurar un buen contraste: Blanco (#FFFF).
+$primary: Mi color principal de la aplicación. Es un púrpura/violeta brillante (#9D47FF) que se usa en botones, hovers y acentos.
+$secondary: Mi color secundario para temas, establecido como Azul Oscuro (#003dc0).
+$container-bg: Fondo específico para mis tarjetas (.card) y contenedores, usando un Púrpura Oscuro (#473756).
+$container-border: El color de borde para esos mismos contenedores.
+$border-tabla: Borde de las tablas, también Blanco.
+$color-iconos: Color que uso para los iconos, generalmente Blanco (#ffff).
+$font-family-titles / $headings-font-family: Establece la tipografía de todos los títulos como 'Julius Sans One'.
+$font-family-body / $font-family-base: Establece la tipografía para el cuerpo del texto como 'Jeju Hallasan'.
+$footer-bg: Fondo del pie de página, usando Negro Semitransparente (rgba(0, 0, 0, 0.51)).
+$color-fondo-modal / $color-texto-modal: Definición de los colores para que mis ventanas modales sean Negras con texto Blanco.
+
+
+
+Botón Principal
+________________
+El botón .btn-primary lo hice con un gradiente que va de mi $primary a otro violeta oscuro (#6F00FF), y le puse una sombra (box-shadow) para que resaltará. Al pasar el ratón, el gradiente se invierte y la sombra se intensifica.
+
+
+
+3. ¿Qué CSS3 Implementé? (Transiciones y Animaciones)
+______________________________________________________
+
+Aparte de los estilos normales, añadí efectos de CSS3 para que la página se sintiera más dinámica:
+Transiciones y Efectos Hover
+Usé la propiedad transition para que los cambios fueran suaves:
+* Enlaces de la Navbar: Al hacer hover o estar activo (.active), aparece una línea de 2px debajo del enlace (border-bottom: 2px solid $primary;).
+* Filas de Tablas: Al pasar el ratón, la fila se ilumina ligeramente con un toque de mi color primario (background-color: rgba($primary, 0.1);).
+* Tarjetas (.card): Les puse una sombra más grande y las levanto un poco (transform: translateY(-2px);) para dar un efecto 3D al hacer hover.
+
+
+Animaciones Keyframes
+Usé la regla @-webkit-keyframes (con el prefijo webkit, claro) para los movimientos:
+1. Animación de Entrada (aparicion):
+   * Para quién: h2 y p.
+   * Efecto: Hice que el texto entrara suavemente con un fade-in (opacity: 0 a opacity: 0.8) durante 3 segundos al cargar.
+2. Animación del Botón (click):
+   * Para quién: .btn-primary:hover.
+   * Efecto: Es un feedback rápido de 0.7s. Simula un "rebote" encogiéndose y expandiéndose un poquito (scale(0.8) y scale(1.1)) cuando pasas el ratón.
+3. Animación de la Card de Artistas (balancear):
+   * Para quién: La tarjeta de los artistas al hacer hover.
+   * Efecto: Esta es la más compleja. La tarjeta se escala y se rota al mismo tiempo con valores negativos y positivos (rotate(-6deg) / rotate(6deg)) para crear un efecto de "balanceo" o "temblor" exagerado, destacando el componente.
