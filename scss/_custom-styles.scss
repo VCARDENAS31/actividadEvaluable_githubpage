@@ -60,6 +60,18 @@ section > .card, div > .card{
     background-color: $container-bg;
     border-color: $container-border;
 }
+
+section#musica > .card{
+    background-image: url('../assets/imagenes/concierto.avif'); 
+    
+    background-size: cover;
+    
+    background-position: center center;
+    
+    background-repeat: no-repeat;
+    
+}
+
 .table {
     border: 1px solid $border-tabla; 
 }
